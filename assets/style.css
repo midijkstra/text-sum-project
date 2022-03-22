@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: rgb(220, 240, 250);
+}
+
+#main {
+	overflow-y: hidden;
+    overflow-x: hidden;
+	position: fixed;
+    top: 15%;
+    left: 10%;
+	height: 70%;
+	width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 3px rgb(200, 200, 200);
+    background-color: white;
+}
+
+#input {
+    top: 20px;
+    left: 20px;
+}
+
+#output {
+    top: 20px;
+    right: 20px;
+}
+
+textarea {
+    resize: none;
+    position: absolute;
+    width: 47%;
+    height: 80%;
+    font-size: 20px;
+    font-family: "Arial";
+    border-color: rgb(200, 200, 200);
+}
+
+textarea:focus {
+    outline: none;
+    border-color: rgb(200, 200, 200);
+}
+
+#button {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    width: 20%;
+    height: 10%;
+    border-radius: 10px;
+    border-width: 0px;
+    font-size: 16px;
+    font-family: "Arial"; 
+    padding: 12px 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(130, 200, 255);    
+    background-position: center;
+    transition: all 0.8s;
+}
+
+#button:hover {
+    background: rgb(71, 167, 245) radial-gradient(circle, transparent 1%, rgb(71, 167, 245) 1%) center/15000%;
+}
+
+#button:active {
+    background-color: rgb(110, 185, 247);
+    background-size: 100%;
+    transition: all 0s;
+}
+
+#orig_lang {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Arial';
+}
